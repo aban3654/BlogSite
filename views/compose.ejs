@@ -1,0 +1,31 @@
+<%- include('partails/header') -%>
+
+  <%- include('partails/navbar') -%>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <h1><%= title %></h1>
+    <br>
+    <form action="/compose" method="post" class="form-group">
+      <input type="text" name="postTitle" class="form-control" id="postTitle" placeholder="Title" autocomplete="off">
+      <br>
+      <textarea name="postBody" cols="75" rows="3" class="form-control" id="postBody" placeholder="Body"></textarea>
+      <br>
+      <button type="submit" class="btn btn-info">Post</button>
+    </form>
+  </div>
+  
+
+
+
+
+
+
+
+<%- include('partails/footer') -%>

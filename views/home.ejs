@@ -1,0 +1,33 @@
+<%- include('partails/header') -%>
+
+  <%- include('partails/navbar') -%>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <h1><%= title %></h1>
+    <p><%= content %></p>
+    <% posts.forEach(post => { %>
+      <h2>
+        <%= post.postTitle %>
+      </h2>
+      <p>
+        <%= post.postBody.substring(0, 99); %> ...
+      </p>
+      <a href="/posts/<%= post.postTitle %>">Read More</a>
+    <% }) %>
+  </div>
+  
+
+
+
+
+
+
+
+<%- include('partails/footer') -%>
